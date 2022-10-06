@@ -4,5 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="someService" class="org.example.service.iml.SomeServiceImpl"/>
+<!--    指定Bean所属的类只能是类，不能是接口，接口是抽象的，无构造函数，spring DI通过容器创建对象实现IOC,使用接口违背设计原理。-->
+    <bean id ="data" class="java.util.Date"/>
 
 </beans>

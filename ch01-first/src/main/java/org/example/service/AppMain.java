@@ -17,6 +17,8 @@ public class AppMain {
         ApplicationContext ctx = new ClassPathXmlApplicationContext(config);
         SomeService someService = (SomeService)ctx.getBean("someService");
         someService.doSomething();
+
     }
+
 
 }

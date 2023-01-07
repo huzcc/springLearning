@@ -50,6 +50,7 @@ public class SpringFactory {
         String config = "./spring-context.xml";
         ApplicationContext ctx = new ClassPathXmlApplicationContext(config);
         Connection conn = (Connection) ctx.getBean("conn");
+        //获取工厂bean
         MyConnectionFactoryBean myConnectionFactoryBean = (MyConnectionFactoryBean) ctx.getBean("&conn");
 
         System.out.println(conn);

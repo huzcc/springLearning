@@ -1,4 +1,4 @@
-package org.example;
+package org.example.fangdong;
 
 public class FangServiceImpl implements FangService {
     @Override

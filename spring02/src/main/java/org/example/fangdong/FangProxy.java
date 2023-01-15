@@ -1,16 +1,8 @@
-package org.example;
+package org.example.fangdong;
 
 public class FangProxy implements FangService{
 
     private FangService fangService = new FangServiceImpl();
-
-//    public FangService getFangService() {
-//        return fangService;
-//    }
-//
-//    public void setFangService(FangService fangService) {
-//        this.fangService = fangService;
-//    }
 
     @Override
     public void zuFang() {
